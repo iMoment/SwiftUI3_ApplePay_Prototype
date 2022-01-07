@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductCard: View {
     @EnvironmentObject var cartManager: CartManager
+    
     var product: Product
     
     var body: some View {
@@ -16,7 +17,7 @@ struct ProductCard: View {
             ZStack(alignment: .bottom) {
                 Image(product.image)
                     .resizable()
-                    .cornerRadius(30)
+                    .cornerRadius(20)
                     .frame(width: 180)
                     .scaledToFit()
                 
@@ -30,7 +31,7 @@ struct ProductCard: View {
                 .padding()
                 .frame(width: 180, alignment: .leading)
                 .background(.ultraThinMaterial)
-                .cornerRadius(3)
+                .cornerRadius(20)
             }
             .frame(width: 180, height: 250)
             .shadow(radius: 3)
