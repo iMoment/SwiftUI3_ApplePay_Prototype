@@ -14,6 +14,8 @@
 		9186BB682788D63B004E5CA1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB672788D63B004E5CA1 /* Product.swift */; };
 		9186BB6B2788D70D004E5CA1 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB6A2788D70D004E5CA1 /* ProductCard.swift */; };
 		91F4B8AE2788E1DC003526F9 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4B8AD2788E1DC003526F9 /* CartButton.swift */; };
+		91F4B8B02788E33F003526F9 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4B8AF2788E33F003526F9 /* CartView.swift */; };
+		91F4B8B22788E3C9003526F9 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4B8B12788E3C9003526F9 /* CartManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9186BB672788D63B004E5CA1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9186BB6A2788D70D004E5CA1 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		91F4B8AD2788E1DC003526F9 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		91F4B8AF2788E33F003526F9 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		91F4B8B12788E3C9003526F9 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9186BB582788D378004E5CA1 /* Shopping_ApplePayApp.swift */,
+				91F4B8B12788E3C9003526F9 /* CartManager.swift */,
 				9186BB5A2788D378004E5CA1 /* ContentView.swift */,
 				9186BB662788D626004E5CA1 /* Model */,
 				91F4B8AC2788E06B003526F9 /* Views */,
@@ -96,6 +101,7 @@
 		91F4B8AC2788E06B003526F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				91F4B8AF2788E33F003526F9 /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F4B8B02788E33F003526F9 /* CartView.swift in Sources */,
 				9186BB5B2788D378004E5CA1 /* ContentView.swift in Sources */,
+				91F4B8B22788E3C9003526F9 /* CartManager.swift in Sources */,
 				9186BB592788D378004E5CA1 /* Shopping_ApplePayApp.swift in Sources */,
 				91F4B8AE2788E1DC003526F9 /* CartButton.swift in Sources */,
 				9186BB682788D63B004E5CA1 /* Product.swift in Sources */,
