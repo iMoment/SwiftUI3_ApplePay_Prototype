@@ -13,6 +13,7 @@
 		9186BB602788D379004E5CA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9186BB5F2788D379004E5CA1 /* Preview Assets.xcassets */; };
 		9186BB682788D63B004E5CA1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB672788D63B004E5CA1 /* Product.swift */; };
 		9186BB6B2788D70D004E5CA1 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB6A2788D70D004E5CA1 /* ProductCard.swift */; };
+		91F4B8AE2788E1DC003526F9 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4B8AD2788E1DC003526F9 /* CartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		9186BB5F2788D379004E5CA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9186BB672788D63B004E5CA1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9186BB6A2788D70D004E5CA1 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		91F4B8AD2788E1DC003526F9 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				9186BB582788D378004E5CA1 /* Shopping_ApplePayApp.swift */,
 				9186BB5A2788D378004E5CA1 /* ContentView.swift */,
 				9186BB662788D626004E5CA1 /* Model */,
+				91F4B8AC2788E06B003526F9 /* Views */,
 				9186BB692788D6F9004E5CA1 /* Components */,
 				9186BB5C2788D379004E5CA1 /* Assets.xcassets */,
 				9186BB5E2788D379004E5CA1 /* Preview Content */,
@@ -85,8 +88,16 @@
 			isa = PBXGroup;
 			children = (
 				9186BB6A2788D70D004E5CA1 /* ProductCard.swift */,
+				91F4B8AD2788E1DC003526F9 /* CartButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		91F4B8AC2788E06B003526F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				9186BB5B2788D378004E5CA1 /* ContentView.swift in Sources */,
 				9186BB592788D378004E5CA1 /* Shopping_ApplePayApp.swift in Sources */,
+				91F4B8AE2788E1DC003526F9 /* CartButton.swift in Sources */,
 				9186BB682788D63B004E5CA1 /* Product.swift in Sources */,
 				9186BB6B2788D70D004E5CA1 /* ProductCard.swift in Sources */,
 			);
