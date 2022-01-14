@@ -73,6 +73,13 @@ class PaymentHandler: NSObject {
         
         paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest)
         paymentController?.delegate = self
+        paymentController?.present(completion: { presented in
+            if presented {
+                debugPrint("Presented payment controller.")
+            } else {
+                debugPrint("Failed to present payment controller.")
+            }
+        })
     }
 }
 
