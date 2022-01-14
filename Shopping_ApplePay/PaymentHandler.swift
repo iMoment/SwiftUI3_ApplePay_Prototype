@@ -45,4 +45,60 @@ class PaymentHandler: NSObject {
         
         return []
     }
+    
+    func startPayment(products: [Product], total: Int, completion: @escaping PaymentCompletionHandler) {
+        completionHandler = completion
+        
+        paymentSummaryItems = []
+        
+        products.forEach { product in
+            let item = PKPaymentSummaryItem(label: product.name, amount: NSDecimalNumber(string: "\(product.price).00"), type: .final)
+            paymentSummaryItems.append(item)
+        }
+        
+        let total = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(string: "\(total).00"), type: .final)
+        paymentSummaryItems.append(total)
+        
+        // MARK: Make payment request
+        let paymentRequest = PKPaymentRequest()
+        paymentRequest.paymentSummaryItems = paymentSummaryItems
+        paymentRequest.merchantIdentifier = "merchant.example.identifier.shoppingapplepay"
+        paymentRequest.merchantCapabilities = .capability3DS
+        paymentRequest.countryCode = "US"
+        paymentRequest.currencyCode = "USD"
+        paymentRequest.supportedNetworks = PaymentHandler.supportedNetworks
+        paymentRequest.shippingType = .delivery
+        paymentRequest.shippingMethods = shippingMethodCalculator()
+        paymentRequest.requiredShippingContactFields = [.name, .postalAddress]
+        
+        paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest)
+        paymentController?.delegate = self
+    }
+}
+
+extension PaymentHandler: PKPaymentAuthorizationControllerDelegate {
+    // MARK: Handle all success/errors related to payment
+    func paymentAuthorizationController(_ controller: PKPaymentAuthorizationController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
+        let errors = [Error]()
+        let status = PKPaymentAuthorizationStatus.success
+        
+        self.paymentStatus = status
+        completion(PKPaymentAuthorizationResult(status: status, errors: errors))
+    }
+    
+    func paymentAuthorizationControllerDidFinish(_ controller: PKPaymentAuthorizationController) {
+        controller.dismiss {
+            DispatchQueue.main.async {
+                if self.paymentStatus == .success {
+                    if let completionHandler = self.completionHandler {
+                        completionHandler(true)
+                    }
+                } else {
+                    if let completionHandler = self.completionHandler {
+                        completionHandler(false)
+                    }
+                }
+            }
+        }
+    }
 }
