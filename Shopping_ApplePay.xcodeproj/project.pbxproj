@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9132084227920D2300E72415 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9132084127920D2300E72415 /* PaymentHandler.swift */; };
 		9186BB592788D378004E5CA1 /* Shopping_ApplePayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB582788D378004E5CA1 /* Shopping_ApplePayApp.swift */; };
 		9186BB5B2788D378004E5CA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186BB5A2788D378004E5CA1 /* ContentView.swift */; };
 		9186BB5D2788D379004E5CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9186BB5C2788D379004E5CA1 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9132084127920D2300E72415 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		9186BB552788D378004E5CA1 /* Shopping_ApplePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopping_ApplePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9186BB582788D378004E5CA1 /* Shopping_ApplePayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_ApplePayApp.swift; sourceTree = "<group>"; };
 		9186BB5A2788D378004E5CA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				9186BB582788D378004E5CA1 /* Shopping_ApplePayApp.swift */,
 				91F4B8B12788E3C9003526F9 /* CartManager.swift */,
+				9132084127920D2300E72415 /* PaymentHandler.swift */,
 				9186BB5A2788D378004E5CA1 /* ContentView.swift */,
 				9186BB662788D626004E5CA1 /* Model */,
 				91F4B8AC2788E06B003526F9 /* Views */,
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A7C7F5278F6C3F0013A19C /* PaymentButton.swift in Sources */,
+				9132084227920D2300E72415 /* PaymentHandler.swift in Sources */,
 				91F4B8B02788E33F003526F9 /* CartView.swift in Sources */,
 				9186BB5B2788D378004E5CA1 /* ContentView.swift in Sources */,
 				91F4B8B22788E3C9003526F9 /* CartManager.swift in Sources */,
