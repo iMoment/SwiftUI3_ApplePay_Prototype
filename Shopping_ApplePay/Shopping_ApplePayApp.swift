@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: Developer account still not recovered
+
 @main
 struct Shopping_ApplePayApp: App {
     var body: some Scene {
